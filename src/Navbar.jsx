@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './Logo.svg';
+import logo from './logo.svg';
 import { FaBars } from 'react-icons/fa';
 import { links } from './data';
 import { useState } from 'react';
