@@ -1,4 +1,3 @@
-import logo from './Logo.svg';
 import './App.css';
 import placeHolder from './Placeholder.png';
 import Navbar from './Navbar';
