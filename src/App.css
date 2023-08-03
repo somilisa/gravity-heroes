@@ -19,20 +19,33 @@ body {
   max-width: 1280px;
   width: 100%;
   margin: auto;
+  padding-top: 36px;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
-  height: 80px;
+  align-items: center;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  min-height: 80px;
   align-items: center;
 }
 
 nav ul {
   display: flex;
-  justify-content: space-between;
-  max-width: 350px;
-  width: 100%;
+  flex-direction: row;
+  height: auto;
+  overflow: hidden;
+  transition: all 0.3s linear;
+  gap: 20px;
+}
+
+.show-container {
+  height: fit-content;
 }
 
 nav ul li {
@@ -51,6 +64,14 @@ nav ul li a {
   transition: .5s ease-in-out;
 }
 
+nav ul li a:hover {
+  color: white;
+}
+
+.nav-toggle {
+  display: none;
+}
+
 .hero {
   display: flex;
   justify-content: space-between;
@@ -61,6 +82,7 @@ nav ul li a {
 .left {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .title {
@@ -91,6 +113,16 @@ nav ul li a {
   margin: 30px 0;
 }
 
+.right {
+  position: relative;
+}
+
+.right svg {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
 .buttons-container {
   display: flex;
   max-width: 350px;
@@ -98,7 +130,7 @@ nav ul li a {
   margin: 30px 0;
 }
 
-button {
+.buttons-container button {
   width: 160px;
   text-align: center;
   font-size: 14px;
@@ -110,13 +142,13 @@ button {
   padding: 20px 0;
 }
 
-button:first-child {
+.buttons-container button:first-child {
   background-color: white;
   color: var(--blue, #4737FF);
   border: transparent;
 }
 
-button:nth-child(2) {
+.buttons-container button:nth-child(2) {
   background-color: transparent;
   border: 2px solid var(--white, #FFF);
   color: #FFF;
@@ -127,4 +159,49 @@ button:nth-child(2) {
   display: flex;
   justify-content: space-between;
   margin-bottom: 30px;
+}
+
+.social-icons a:hover {
+  transform: scale(1.5);
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding-top: 0;
+  }
+  nav {
+    flex-direction: column;
+  }
+  .nav-header {
+    flex-direction: row;
+    width: 100%;
+  }
+  .nav-toggle {
+    display: block;
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+    transition: all 0.3s linear;
+  }
+  .nav-toggle:hover {
+    transform: rotate(90deg);
+  }
+  nav ul {
+    height: 0;
+    flex-direction: column;
+    width: 100%;
+    gap: 0px;
+  }
+  .hero {
+    flex-direction: column-reverse;
+  }
+  .right img {
+    width: 100%;
+    height: auto;
+  }
+  .show-container {
+    height: 10rem;
+  }
 }
