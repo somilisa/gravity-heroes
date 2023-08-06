@@ -130,7 +130,7 @@ nav ul li a:hover {
   margin: 30px 0;
 }
 
-.buttons-container button {
+.wrapper {
   width: 160px;
   text-align: center;
   font-size: 14px;
@@ -142,13 +142,13 @@ nav ul li a:hover {
   padding: 20px 0;
 }
 
-.buttons-container button:first-child {
+.primary {
   background-color: white;
   color: var(--blue, #4737FF);
   border: transparent;
 }
 
-.buttons-container button:nth-child(2) {
+.secondary {
   background-color: transparent;
   border: 2px solid var(--white, #FFF);
   color: #FFF;
@@ -204,4 +204,28 @@ nav ul li a:hover {
   .show-container {
     height: 10rem;
   }
+}
+
+.wrapper {
+  width: 160px;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  padding: 20px 0;
+}
+
+.primary {
+  background-color: white;
+  color: var(--blue, #4737FF);
+  border: transparent;
+}
+
+.secondary {
+  background-color: transparent;
+  border: 2px solid var(--white, #FFF);
+  color: #FFF;
 }

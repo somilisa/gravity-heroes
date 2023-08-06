@@ -1,12 +1,13 @@
 import './App.css';
 import placeHolder from './Placeholder.png';
 import Navbar from './Navbar';
+import Button from './Button';
 
 function App() {
   return (
     <div className='container'>
       <header>
-        <Navbar/>
+        <Navbar />
       </header>
       <main>
         <div className='hero'>
@@ -19,8 +20,8 @@ function App() {
               Opportunity.
             </p>
             <div className='buttons-container'>
-              <button>GET STARTED</button>
-              <button>LEARN MORE</button>
+              <Button variant={'primary'}>GET STARTED</Button>
+              <Button variant={'secondary'}>LEARN MORE</Button>
             </div>
           </div>
           <div className='right'>
@@ -43,7 +44,7 @@ function App() {
       </main>
       <footer>
         <div className='social-icons'>
-          <a href="https://www.twitter.com">
+          <a href='https://www.twitter.com'>
             <svg
               xmlns='http://www.w3.org/2000/svg'
               width='24'
@@ -59,7 +60,7 @@ function App() {
               />
             </svg>
           </a>
-          <a href="https://www.linkedin.com">
+          <a href='https://www.linkedin.com'>
             <svg
               xmlns='http://www.w3.org/2000/svg'
               width='24'
@@ -75,7 +76,7 @@ function App() {
               />
             </svg>
           </a>
-          <a href="https://www.google.com">
+          <a href='https://www.google.com'>
             <svg
               xmlns='http://www.w3.org/2000/svg'
               width='24'
