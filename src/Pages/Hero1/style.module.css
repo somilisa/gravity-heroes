@@ -5,7 +5,7 @@
 }
 
 .container {
-  background-image: url("../../public/Shape.svg");
+  background-image: url("../../../public/Shape.svg");
   background-color: #4737ff;
   background-repeat: no-repeat;
   background-size: cover;

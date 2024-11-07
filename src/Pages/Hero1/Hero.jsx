@@ -1,5 +1,5 @@
 import React from "react";
-import placeHolder from "../Assets/Placeholder.png";
+import placeHolder from "../../Assets/Placeholder.png";
 import Button from "./Button";
 import styles from "./style.module.css";
 const Hero = () => {
