@@ -137,30 +137,6 @@ nav ul li a:hover {
   margin: 30px 0;
 }
 
-/* .wrapper {
-  width: 160px;
-  text-align: center;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-  padding: 20px 0;
-} */
-
-.primary {
-  background-color: white;
-  color: var(--blue, #4737ff);
-  border: transparent;
-}
-
-.secondary {
-  background-color: transparent;
-  border: 2px solid var(--white, #fff);
-  color: #fff;
-}
-
 .social_icons {
   display: flex;
   gap: 15px;
@@ -230,7 +206,4 @@ nav ul li a:hover {
   background-color: transparent;
   border: 2px solid var(--white, #fff);
   color: #fff;
-}
-
-@media screen and (max-width: 1024px) {
 }
