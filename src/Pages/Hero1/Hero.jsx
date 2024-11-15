@@ -1,6 +1,6 @@
 import React from "react";
-import placeHolder from "../Assets/Placeholder.png";
-import Button from "./Button";
+import placeHolder from "../../Assets/Placeholder.png";
+import Button from "../../Components/Button";
 import styles from "./style.module.css";
 const Hero = () => {
   return (
@@ -13,8 +13,8 @@ const Hero = () => {
           individual to join us in the Condotel Investment Opportunity.
         </p>
         <div className={styles.buttons_container}>
-          <Button variant={"primary"}>GET STARTED</Button>
-          <Button variant={"secondary"}>LEARN MORE</Button>
+          <Button variant={"secondary"}>GET STARTED</Button>
+          <Button variant={"primary"}>LEARN MORE</Button>
         </div>
       </div>
       <div className={styles.right}>

@@ -1,0 +1,36 @@
+.wrapper {
+  width: 160px;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  padding: 20px 0;
+  background-color: var(--blue, #4737ff);
+  border: transparent;
+  color: #fff;
+}
+.primary {
+  border: 2px solid var(--white, #fff);
+}
+.secondary {
+  background-color: white;
+  color: var(--blue, #4737ff);
+  border: 2px solid var(--blue, #4737ff);
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    width: 160px;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    padding: 20px 0;
+  }
+}
