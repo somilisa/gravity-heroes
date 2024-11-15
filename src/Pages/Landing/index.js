@@ -1,18 +1,13 @@
-import React from "react";
-import { Link } from "react-router-dom";
+// import styles from "./style.module.css";
+import Landing from "./Landing";
 
-const Landing = () => {
+function HeroOne() {
   return (
+    // <div className={styles.container}>
     <div>
-      <Link to="one">Two</Link>
-      <Link to="two">Three</Link>
-      <Link to="three">Four</Link>
-      <Link to="four">Five</Link>
-      <Link to="five">Six</Link>
-      <Link to="six">Seven</Link>
-      <Link to="seven">One</Link>
+      <Landing />
     </div>
   );
-};
+}
 
-export default Landing;
+export default HeroOne;
