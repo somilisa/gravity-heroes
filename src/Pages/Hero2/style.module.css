@@ -1,0 +1,135 @@
+.container {
+  background-color: #f4f4f4;
+}
+.container::-webkit-scrollbar {
+  display: none;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 80px;
+}
+.wrapper {
+  max-width: 81.5vw;
+  width: 100%;
+  margin: 0 auto;
+}
+.main {
+  max-width: 900px;
+  margin: 90px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+.hero {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+.text {
+  flex: 0.6;
+}
+.text h2 {
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 70px;
+  letter-spacing: -1px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #f96241;
+}
+.description {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  color: #222222b3;
+  margin: 30px 0 0;
+}
+.right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.buttons_container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: flex-end;
+  max-width: 350px;
+  justify-content: center;
+  align-items: center;
+  flex: 0.3;
+  /* margin: 30px 0; */
+}
+.buttons_container a {
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: lighter;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0 12px;
+  }
+
+  .wrapper {
+    max-width: unset;
+  }
+  .nav_header {
+    flex-direction: row;
+    width: 100%;
+  }
+  .nav_toggle {
+    display: block;
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+    transition: all 0.3s linear;
+  }
+  .nav_toggle:hover {
+    transform: rotate(90deg);
+  }
+  nav ul {
+    height: 0;
+    flex-direction: column;
+    width: 100%;
+    gap: 0px;
+  }
+  .main {
+    margin-top: 0;
+    gap: 30px;
+  }
+  .hero {
+    margin-left: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .right img {
+    width: 100%;
+    height: auto;
+  }
+  .show-container {
+    height: 10rem;
+  }
+}
+
+.primary {
+  background-color: white;
+  color: var(--blue, #4737ff);
+  border: transparent;
+}
+
+.secondary {
+  background-color: transparent;
+  border: 2px solid var(--white, #fff);
+  color: #fff;
+}

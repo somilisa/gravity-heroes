@@ -1,15 +1,16 @@
 import styles from "./style.module.css";
+import Container from "../../Components/Container";
 import Navbar from "./Navbar";
 import Hero from "./Hero";
 import Footer from "./Footer";
 
 function HeroOne() {
   return (
-    <div className={styles.container}>
+    <Container variant={styles.container}>
       <Navbar />
       <Hero />
       <Footer />
-    </div>
+    </Container>
   );
 }
 

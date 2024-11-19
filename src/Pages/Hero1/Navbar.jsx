@@ -9,7 +9,7 @@ const Navbar = () => {
   const [showLinks, setShowLinks] = useState(false);
 
   return (
-    <nav className={styles.wrapper}>
+    <nav className={`${styles.wrapper} ${styles.nav}`}>
       <div className={styles.nav_header}>
         <img src={logo} alt="gravity"></img>
         <button
