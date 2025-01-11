@@ -1,9 +1,7 @@
 .container {
   background-color: #f4f4f4;
 }
-.container::-webkit-scrollbar {
-  display: none;
-}
+
 .nav {
   display: flex;
   justify-content: space-between;
@@ -31,9 +29,9 @@
   flex: 0.6;
 }
 .text h2 {
-  font-size: 60px;
+  font-size: clamp(16px, calc(10px + 4vw), 60px);
   font-weight: 600;
-  line-height: 70px;
+  line-height: 1.1;
   letter-spacing: -1px;
   text-align: left;
   text-underline-position: from-font;
@@ -41,10 +39,9 @@
   color: #f96241;
 }
 .description {
-  font-size: 18px;
-  font-style: normal;
+  font-size: clamp(14px, calc(6px + 1vw), 18px);
   font-weight: 400;
-  line-height: 28px;
+  line-height: 1.5;
   color: #222222b3;
   margin: 30px 0 0;
 }
