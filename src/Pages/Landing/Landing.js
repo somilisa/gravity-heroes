@@ -4,13 +4,13 @@ import { Link } from "react-router-dom";
 const Landing = () => {
   return (
     <div>
-      <Link to="one">Two</Link>
-      <Link to="two">Three</Link>
-      <Link to="three">Four</Link>
-      <Link to="four">Five</Link>
-      <Link to="five">Six</Link>
-      <Link to="six">Seven</Link>
-      <Link to="seven">One</Link>
+      <Link to="one">One</Link>
+      <Link to="two">Two</Link>
+      <Link to="three">Three</Link>
+      <Link to="four">Four</Link>
+      <Link to="five">Five</Link>
+      <Link to="six">Six</Link>
+      <Link to="seven">Seven</Link>
     </div>
   );
 };
